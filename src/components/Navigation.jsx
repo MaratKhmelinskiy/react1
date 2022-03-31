@@ -27,10 +27,10 @@ export default function Navigation() {
             target="_blank"
             rel="noreferrer"
           >
-            My Calendar
+            Мой календарь
           </a>
-          <button onClick={onLogout}>Logout</button>
-          <img src={Logo} alt="an icon of an eye and a leaf" />
+          <button onClick={onLogout}>Выход</button>
+          {/* <img src={Logo} alt="an icon of an eye and a leaf" /> */}
         </nav>
       )}
     </>

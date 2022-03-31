@@ -34,7 +34,7 @@ export default function SignUp() {
   async function onSuccess(uid) {
     const newUser = { name: form.name, city: form.city, isTeacher: false };
     await createDocumentWithId("users", uid, newUser);
-    alert("Your account is successfully created, please login now");
+    alert("Ваша учетная запись успешно создана, пожалуйста, войдите сейчас");
     history.push("/login");
   }
 
@@ -54,7 +54,7 @@ export default function SignUp() {
   return (
     <div id="auth-page">
       <header>
-        <h3>Register to OpenEyes</h3>
+        <h3>Зарегестрироваться в OpenEyes</h3>
       </header>
       <div className="auth-page-content">
         <form onSubmit={onSubmit}>
@@ -63,9 +63,9 @@ export default function SignUp() {
           </div>
           {InputFields}
           <p>{errorMassage}</p>
-          <button>Register</button>
+          <button>Регистрация</button>
           <Link to="/login">Login instead</Link>
-          <Link to="/">Go to main</Link>
+          <Link to="/">Перейти на главную</Link>
         </form>
       </div>
     </div>

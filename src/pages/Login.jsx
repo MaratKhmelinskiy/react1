@@ -59,21 +59,21 @@ export default function Login() {
   return (
     <div id="auth-page">
       <header>
-        <h3>Login to OpenEyes</h3>
+        <h3>Войти в OpenEyes</h3>
       </header>
       <div className="auth-page-content">
         <form onSubmit={onSubmit}>
           <div className="logo">
-            <img src={Logo} alt="an icon of an eye and a leaf" />
+            {/* <img src={Logo} alt="an icon of an eye and a leaf" /> */}
           </div>
           {InputFields}
           <p>{errorMassage}</p>
           <InputCheckbox state={[remember, setRemember]}>
-            Remember me
+            Запомнить меня
           </InputCheckbox>
-          <button>Login</button>
-          <Link to="/signup">Registration</Link>
-          <Link to="/">Go to main</Link>
+          <button>Войти</button>
+          <Link to="/signup">Зарегестрироваться</Link>
+          <Link to="/">Вернуться на главную</Link>
         </form>
       </div>
     </div>

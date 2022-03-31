@@ -42,17 +42,17 @@ export default function Home() {
   return (
     <div id="home-page">
       <header>
-        {user.isTeacher ? <h3>My teaching</h3> : <h3>My learning</h3>}
+        {user.isTeacher ? <h3>My teaching</h3> : <h3>Мое обучение</h3>}
       </header>
       <div className="home-page-content">
-        <p>You logged in as {user.name}</p>
-        <h2>My courses</h2>
+        <p>Вы вошли как {user.name}</p>
+        <h2>Мои курсы</h2>
         <div className="courses">
           {user.isTeacher ? TeacherCourseItems : CourseItems}
         </div>
         {user.isTeacher && (
           <div id="add-course">
-            <Link to="edit/new-profile">Add course</Link>
+            <Link to="edit/new-profile">Добавить курсы</Link>
           </div>
         )}
       </div>

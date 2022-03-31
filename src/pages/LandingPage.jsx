@@ -14,17 +14,17 @@ export default function LandingPage() {
     <div id="landing-page">
       <header>
         <div className="logo">
-          <img src={Logo} alt="an icon of an eye and a leaf" />
+          {/* <img src={Logo} alt="an icon of an eye and a leaf" /> */}
         </div>
-        <h1>OpenEyes e-learning</h1>
+        {/* <h1>OpenEyes e-learning</h1> */}
       </header>
       <section className="content">
         <h2>
-          OpenEyes is a free online learning platform that offers courses about
-          indigenous cultures around the world
+        OpenEyes — это бесплатная обучающая онлайн-платформа, которая предлагает курсы по
+         разработке и тестированию
         </h2>
-        {Content}
-        <Link to="/login">Start Now</Link>
+        {/* {Content} */}
+        <Link to="/login">Начинайте учиться</Link>
       </section>
     </div>
   );
